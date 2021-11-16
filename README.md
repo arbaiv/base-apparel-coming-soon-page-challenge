@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/arbaiv/base-apparel-coming-soon-page-challenge)
+- Live Site URL: (https://adoring-hypatia-7986ee.netlify.app)
 
 ## My process
 
