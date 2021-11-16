@@ -1,0 +1,214 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+div#container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+/* Header / Logo section */
+div#header {
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+}
+div#header{
+    margin: 25.5px 32px;
+}
+/* Hero image section */
+div#hero-image {
+    grid-column: 1 / 13;
+    grid-row: 2 / 3;
+}
+div#hero-image img {
+    width: 100%;
+    display: block;
+}
+/* Main Content section */
+div#main-content {
+    grid-column: 1  / 13;
+    grid-row: 3 / 4;
+    text-align: center;
+}
+p#hero-text {
+    width: 240px;
+    font-size: 2.5rem;
+    letter-spacing: 0.265em;
+    margin: 65px auto 0px;
+}
+span#target-one {
+    font-weight: 300;
+    color: #CE9797;
+    line-height: 40px;
+}
+span#target-two {
+    line-height: 44px;
+    font-weight: 600;
+    color: #413A3A;
+}
+p#hero-description {
+    width: 315px;
+    margin: 0px auto;
+    font-size: 0.875rem;
+    line-height: 22px;
+    color: #CE9797;
+    margin-top: 24px;
+}
+/* Subscription Form section */
+div#subscription-form {
+    grid-column: 1 / 13;
+    grid-row: 4 / 5;
+    margin: 40px 0px 92px;
+    text-align: center;
+}
+input#email {
+    width: 311px;
+    height: 48px;  
+    border: 1px solid rgba(206, 151, 151, 0.5);
+    -webkit-border-radius: 30px;
+    -moz-border-radius : 30px;
+    border-radius: 30px;
+    padding: 0px 110px 0px 24px;
+    color: #413A3A;
+}
+input#email::placeholder {
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: #CE9797;
+}
+input#email:focus {
+    outline: none;
+    border: 2px solid #F96262;
+}
+div#submit-button {
+    display: inline;
+    position: relative;
+}
+div#submit-button button {
+    position: absolute;
+    top: -16px;
+    left: -66px;
+    width: 65px;
+    height: 46px;
+    background: linear-gradient(297.74deg, #EE8C8C 12.91%, #F8BFBF 84.44%);
+    box-shadow: 0px 17px 15px rgba(206, 151, 151, 0.3);
+    border-radius: 30px;
+    border: none;
+    text-indent: 5px;
+}
+div#submit-button button:hover {
+    background: linear-gradient(297.74deg, #F5CACB 12.91%, #FADADB 84.44%);
+    box-shadow: 0px 19px 15px 6px rgba(206, 151, 151, 0.3);
+    cursor: pointer;
+}
+/* div#input-invalid-box is for the custom form validation message */
+div#input-invalid-box {
+    display: none;
+}
+p.input-invalid-text {
+    width: 311px;
+    margin: 0px auto;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 24px;
+    color: #F96262;
+    padding-left: 24px;
+    padding-top: 4px;
+    text-align: start;
+}
+/* svg.icon-error is shown when there is an error in the form */
+svg.icon-error {
+    display: none;
+    position: absolute;
+    left: -105px;
+    margin-top: 12px;
+}
+
+
+
+@media screen and (min-width: 1140px) {
+    div#container {
+        grid-template-rows: repeat(3, auto);
+    }
+    div#header {
+        grid-column: 2 / 7;
+        grid-row: 1 / 2;
+        margin: 65px 0px 136px 0px;
+    }
+    div#hero-image {
+        grid-column: 7 / 13;
+        grid-row: 1 / 4;
+        text-align: right;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    div#hero-image img{
+        max-height: 800px;
+    }
+    p#hero-text {
+        width: 437px;
+        margin: 0px 0px;
+        font-size: 4rem;
+    }
+    span#target-one {
+        line-height: 64px;
+    }
+    span#target-two {
+        line-height: 71px;
+    }
+    p#hero-description {
+        width: 437px;
+        margin: 17px 0px 0px 0px;
+        font-size: 1rem;
+        line-height: 28px;
+    }
+    div#main-content {
+        grid-column: 2 / 7;
+        grid-row: 2 / 3;
+        text-align: left;
+    }
+    div#subscription-form {
+        grid-column: 2 / 7;
+        grid-row: 3 / 4;
+        text-align: left;
+        margin-top: 41px;
+    }
+    input#email {
+        width: 445px;
+        height: 56px;
+        padding-right: 145px;
+    }
+    div#submit-button button {
+        width: 100px;
+        height: 54px;
+        top: -20px;
+        left: -101px;
+    }
+    p.input-invalid-text {
+        width: 445px;   
+        margin: 0px;
+    }    
+    svg.icon-error {
+        left: -140px;
+        margin-top: 15px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    body {
+        width: 1440px;
+        margin: 0px auto;
+    }
+    div#hero-image img {
+        width: 610px;
+        height: 800px;
+    }
+    div#header, div#main-content, div#subscription-form {
+        margin-left: 45px;
+    }
+}
