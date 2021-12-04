@@ -34,11 +34,12 @@ div#main-content {
     grid-row: 3 / 4;
     text-align: center;
 }
-p#hero-text {
+h1#hero-text {
     width: 240px;
     font-size: 2.5rem;
     letter-spacing: 0.265em;
     margin: 65px auto 0px;
+    text-transform: uppercase;
 }
 span#target-one {
     font-weight: 300;
@@ -151,7 +152,7 @@ svg.icon-error {
     div#hero-image img{
         max-height: 800px;
     }
-    p#hero-text {
+    h1#hero-text {
         width: 437px;
         margin: 0px 0px;
         font-size: 4rem;
